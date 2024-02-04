@@ -227,7 +227,6 @@ body.dark_mode{
 @media only screen and (max-width: 600px) {
   .like-button,
   .likeB,
-  .topnav
   .comment-box,
   #btn-post,
   #comment-container {
@@ -235,6 +234,9 @@ body.dark_mode{
     margin: 0;
     padding: 5px;
   }
+    .topnav{
+        width: 100%;
+    }
   
   .like-button {
     font-size: 14px;
