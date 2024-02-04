@@ -4,17 +4,19 @@
     <script src="1.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <title>My Webpage</title>
+    <div id="home"></div>
     
 </head>
 
-<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <body>
     <header style="padding-bottom: 20px;">
         <!-- <nav> -->
+            <nav>
             <div class="topnav">
                 <a href="#home">Home</a>
                 <a href="#about_me">About Me</a>
@@ -25,45 +27,51 @@
                 <a href="#resume">Resume</a>
                 <a href="#socials">Socials</a>
               </div>
-            <button id="home" class="button button1">Dark Mode</button>
+              </nav>
+            <button class="dark-mode-button button button1" onclick="dark_mode()">Dark Mode</button>
         <!-- </nav> -->
-    </header>\
+    </header>
     <div id="about_me">
         <h1>About Me</h1>
-        <div style="margin-bottom: 15%; font-size: 30px;font-family: fantasy;"><p> <img src="20221205_094349.jpg" alt="Arnav Sharma" style="width:25%; margin-right: 5%; float:inline-end; border-radius: 50%; ">I am currently pursuing my B.Tech+M.S.by Research in Computer Science from the International Institute of Information Technology(IIIT), Hyderabad.<br> I have a keen interest in Mathematics and Competitive Programming.<br>I am an avid reader, and like to spend my free time either reading, playing tennis, or playing the piano. </p></div>
+        <div style="margin-bottom: 15%; font-size: 30px;font-family: fantasy;"><p> <img src="20221205_094349.jpg" alt="Arnav Sharma" style="width:25%; margin-right: 5%; float:inline-end; border-radius: 50%; border-style:groove; border-width: 4px; border-color: darkgreen;">I am currently pursuing my B.Tech+M.S.by Research in Computer Science from the International Institute of Information Technology(IIIT), Hyderabad.<br> I have a keen interest in Mathematics and Competitive Programming.<br>I am an avid reader, and like to spend my free time either reading, playing tennis, or playing the piano. </p></div>
         <!-- Add any additional content for your home page here -->
     </div>
 
     <div id="education">
         <h1>Educational Backgroud</h1>
         <ul>
-            <l1></l1>
-            <li></li>
-            <li></li>
+            <li><strong>IIIT Hyderabad(2023-Present)</strong> - B.Tech+M.S in C.S.E.</li>
+            <li><strong>Annie Besant School, Indore</strong> - High School(2021-23)</li>
+            <li><strong>Atomic Energy Central School, Indore</strong> - Junior High(2011-21)</li>
         </ul>
     </div>
     <div id="achievements">
         <h1>Achievements</h1>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><strong>IOQM</strong> - Cleared first stage of Mathematics Olympiad. Qualified to appear in Indian National Mathematics Olympiad.</li>
+            <li></li><strong>KVPY Merit List</strong> - AIR 1521 in SA Stream KVPY exam held by IISc Bangalore.</li>
+            <li></li><strong>NTSE</strong> - Qualified for the prestigious NTSE Scholarship given by NCERT, by clearing state and national level examinations.
+            
         </ul>
     </div>
     <div id="skills">
         <h1>Skills</h1>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>C</li>
+            <li>C++</li>
+            <li>HTML</li>
+            <li>CSS</li>
         </ul>
     </div>
     <div id="blogs">
         <h1>Blogs</h1>
         <ul>
-            <li></li>
-            <li></li>
+            <li>
+                <a class="blog_text" href="Blog1.html">Blog 1</a>
+            </li>
+            <li>
+                <a class="blog_text" href="Blog2.html">Blog 2</a>
+            </li>
         </ul>
     </div>
     <div id="resume">
@@ -74,25 +82,23 @@
         <h1>Socials</h1>
         <ul>
             <li>
-                <a href="http://www.linkedin.com/in/arnav-sharma-584841284/fr" target="blank" style="display:flex; align-items: center;">
+                <a class="img" href="http://www.linkedin.com/in/arnav-sharma-584841284/fr" target="blank" style="display:flex; align-items: center; text-decoration: none;">
                     <i class="fa fa-linkedin-square fa-2x"></i> LinkedIn
                 </a>
             </li>
             <li>
-                <a href="https://github.com/iamarnav08" target="_blank" style="display:flex; align-items: center;">
+                <a class="img" href="https://github.com/iamarnav08" target="_blank" style="display:flex;align-items: center;text-decoration: none;">
                     <i class="fa fa-github fa-2x"></i> Github
                 </a>
             </li>
             <li>
-                <a href="mailto:arnav.sharma@research.iiit.ac.in" target="_blank" style="display:flex; align-items: center;">
-                    <i class="fa fa-envelope fa-2x"></i> Email
+                <a class="img" href="mailto:arnav.sharma@research.iiit.ac.in" target="_blank" style="display:flex; align-items: center; text-decoration: none;">
+                    <i class="fa fa-envelope fa-2x"></i> Email</a>
             </li>
         </ul>
         
     </div>
     
-
-    <!-- Add your social links here -->
 
 </body>
 </html>
