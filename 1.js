@@ -8,12 +8,34 @@ document.querySelectorAll('.topnav a').forEach(anchor => {
     });
 });
 
-// window.onscroll = function() {scrollFunction()};
+function dark_mode() {
+    document.body.classList.toggle('dark_mode');
+}
 
-// function scrollFunction() {
-//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//     document.getElementById("navbar").style.top = "0";
-//   } else {
-//     document.getElementById("navbar").style.top = "-50px";
-//   }
-// }
+document.addEventListener("DOMContentLoaded", function () {
+    let commentsArray = [];
+    const likeCount = document.getElementById("likeCount");
+    let currentLikes = parseInt(localStorage.getItem("likeCount")) || 0;
+    likeCount.innerHTML = currentLikes;
+
+    function like() {
+        currentLikes++;
+        likeCount.innerHTML = currentLikes;
+        localStorage.setItem("likeCount", currentLikes);
+    }
+
+    function dislike() {
+        currentLikes--;
+        likeCount.innerHTML = currentLikes;
+        localStorage.setItem("likeCount", currentLikes);
+    }
+
+    const likeButton = document.getElementById("likeButton");
+    likeButton.addEventListener('click', like);
+
+    const dislikeButton = document.getElementById("dislikeButton");
+    dislikeButton.addEventListener('click', dislike);
+
+    
+});
+
