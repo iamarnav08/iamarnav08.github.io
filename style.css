@@ -81,7 +81,7 @@ body {
 
   
   .fa {
-    font-size: 24px; /* Adjusted the font size */
+    font-size: 24px; 
   }
   
   .fa-github {
@@ -92,7 +92,7 @@ body {
     color: rgb(165, 7, 7);
   }
   
-  .fa-linkedin-square { /* Corrected the class name */
+  .fa-linkedin-square { 
     color: darkblue;
   }
 
@@ -152,16 +152,28 @@ body.dark_mode{
   }
   
  .likeB{
-   background-color: yellow;
+   background-color: black;
    border-radius: 20%;
+   padding: 10px 20px;
+    margin:auto;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    color:white;
+    display: flex;
+  justify-content: center;
+  align-items: center;
  }
 
  .likeB:hover{
-   background-color: #001ccd;
    transition: 0.2s;
-   color: white;
+   color: red;
  }
 
+ .dark_mode .likeB{
+  background-color: #34761a;;
+  ;
+ }
 .comment-box{
     margin:auto;
     width: 50%;
