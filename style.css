@@ -235,15 +235,17 @@ body.dark_mode{
     padding: 5px;
   }
     .topnav {
-    flex-direction: column; /* Change to column layout */
     align-items: center;    /* Center items in the column */
     font-size: small;
+    
   }
 
   .topnav a {
     width: 100%;            /* Take up full width */
     box-sizing: border-box;  /* Include padding and border in the width */
     text-align: center;     /* Center text */
+    padding: 8px 10px;
+    font-size: 14px;
   }
   
   .like-button {
