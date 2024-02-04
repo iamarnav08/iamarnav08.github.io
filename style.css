@@ -2,7 +2,16 @@ body {
     background-color:  rgba(169, 223, 138, 0.799);
     padding-bottom: 40px;
   }
-  
+
+ @media only screen and (max-width: 600px) {
+    .topnav {
+      display: block;
+    }
+    .topnav a {
+      display: block;
+      text-align: left;
+    }
+  }
   .topnav {
     background-color: #333;
     border-style: solid;
