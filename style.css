@@ -2,10 +2,10 @@ body {
     background-color:  rgba(169, 223, 138, 0.799);
     padding-bottom: 40px;
   }
-
- 
+  
   .topnav {
     background-color: #333;
+    
     border-style: solid;
     position: fixed;
     margin-right: 20px;
@@ -175,6 +175,30 @@ body.dark_mode{
   background-color: #34761a;;
   ;
  }
+ .likeBu{
+  background-color: #34761a;
+  color:white;
+  border-radius: 20%;
+  padding: 10px 20px;
+   margin:auto;
+   border: none;
+   border-radius: 5px;
+   text-align: center;
+   display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.likeBu:hover{
+  transition: 0.2s;
+  color: rgb(0, 60, 255);
+}
+
+.dark_mode .likeBu{
+ background-color: #34761a;
+
+}
+
 .comment-box{
     margin:auto;
     width: 50%;
@@ -224,28 +248,19 @@ body.dark_mode{
   margin:auto;
 }
 
-@media only screen and (max-width: 1000px) {
+/* Existing code */
+
+/* Add media query for mobile devices */
+@media only screen and (max-width: 600px) {
   .like-button,
   .likeB,
+  .likeBu,
   .comment-box,
   #btn-post,
   #comment-container {
     width: 100%;
     margin: 0;
     padding: 5px;
-  }
-    .topnav {
-    align-items: center;    /* Center items in the column */
-    font-size: small;
-    
-  }
-
-  .topnav a {
-    width: 100%;            /* Take up full width */
-    box-sizing: border-box;  /* Include padding and border in the width */
-    text-align: center;     /* Center text */
-    padding: 8px 10px;
-    font-size: 14px;
   }
   
   .like-button {
@@ -260,3 +275,5 @@ body.dark_mode{
     width: 100%;
   }
 }
+
+#more {display: none;}
